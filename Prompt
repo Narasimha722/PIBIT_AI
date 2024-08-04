@@ -1,0 +1,55 @@
+To write a ChatGPT prompt that takes a resume as input and parses the content in JSON format, you can define a clear structure for how you want the JSON output to look. Below is an example prompt and a Python script using OpenAI's API to achieve this:
+Prompt
+
+plaintext
+
+You are an AI model that extracts structured information from resumes. Given a resume, parse its content into the following JSON format:
+
+```json
+{
+  "name": "",
+  "contact": {
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "github": ""
+  },
+  "education": [
+    {
+      "degree": "",
+      "field_of_study": "",
+      "university": "",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "cgpa": ""
+    }
+  ],
+  "experience": [
+    {
+      "position": "",
+      "company": "",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "responsibilities": [""]
+    }
+  ],
+  "projects": [
+    {
+      "title": "",
+      "description": "",
+      "technologies": [""],
+      "link": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "",
+      "issuer": "",
+      "date": "",
+      "credential_id": ""
+    }
+  ],
+  "skills": [""]
+}
